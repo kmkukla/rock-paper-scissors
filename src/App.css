@@ -39,6 +39,12 @@ h6 {
   margin-bottom: 50px;
 }
 
+@media(max-width: 576px) {
+  .info {
+    flex-direction: column;
+  }
+}
+
 .info h2 {
   font-size: 18px;
   margin-top: 0;
@@ -99,7 +105,7 @@ h6 {
 
 .vs {
   width: 100px;
-  font-size: 100px;
+  font-size: 75px;
   opacity: 0.25;
   transform: rotate(-0.1turn);
   pointer-events: none;
@@ -234,4 +240,24 @@ h6 {
   flex-shrink: 1;
   background: #fa65ff;
   color: #fdedfd;
+}
+
+@media(max-width: 576px) {
+
+  .info h2 {
+    margin-bottom: 10px;
+  }
+
+  .choices {
+    grid-gap: 10px;
+  }
+
+  .game-state > div {
+    width: 90%;
+  }
+
+  .game-state-content p {
+    font-size: 24px;
+    margin: 30px 3px 30px 0;
+  }
 }
